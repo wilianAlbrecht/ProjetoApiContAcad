@@ -1,33 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2023-10-08T06:00:46.773Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="utosYsT5fr66mmv58iYO" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-08T06:03:24.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="iib7bL05MqCiUT-1s0C6" version="22.0.4" type="github">
   <diagram name="Página-1" id="ISYm6FrJafREmLT2h12c">
     <mxGraphModel dx="2033" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="bNtw9ZAgYegGWrS_SB8m-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;BasePessoa&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;abstract&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# codigo: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# nome: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# dataNascimento: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# nomeUsuario: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# senha: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# BasePessoa(int codigo, String nome, LocalDate dataNascimento, String usuario, String senha)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="30" y="120" width="290" height="210" as="geometry" />
+          <mxGeometry x="60" y="120" width="290" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="bNtw9ZAgYegGWrS_SB8m-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bNtw9ZAgYegGWrS_SB8m-2" target="bNtw9ZAgYegGWrS_SB8m-1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="125" y="390" />
-              <mxPoint x="175" y="390" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="bNtw9ZAgYegGWrS_SB8m-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bNtw9ZAgYegGWrS_SB8m-2" target="bNtw9ZAgYegGWrS_SB8m-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bNtw9ZAgYegGWrS_SB8m-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Professor&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- cargo: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- codigoDisciplina: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Professor(&lt;/p&gt;int codigo, String nome, LocalDate dataNascimento, String usuario, String senha, String cargo, int codigoDisciplina&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;br&gt;&lt;br&gt;+ lancarNota(): PUT&lt;br&gt;&lt;/span&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry y="440" width="250" height="190" as="geometry" />
+          <mxGeometry x="210" y="440" width="200" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="bNtw9ZAgYegGWrS_SB8m-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bNtw9ZAgYegGWrS_SB8m-4" target="bNtw9ZAgYegGWrS_SB8m-1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="360" y="390" />
-              <mxPoint x="175" y="390" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="bNtw9ZAgYegGWrS_SB8m-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bNtw9ZAgYegGWrS_SB8m-4" target="bNtw9ZAgYegGWrS_SB8m-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bNtw9ZAgYegGWrS_SB8m-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Aluno&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- periodo: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- codigoTurma&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="270" y="440" width="176" height="190" as="geometry" />
+        <mxCell id="bNtw9ZAgYegGWrS_SB8m-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Aluno&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- periodo: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- codigoTurma: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;+ BasePessoa(int codigo, String nome, LocalDate dataNascimento, String usuario, String senha, int periodo, int codigoTurma)" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="10" y="440" width="176" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
