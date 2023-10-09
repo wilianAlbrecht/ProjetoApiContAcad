@@ -7,7 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,19 +23,20 @@ public class RendimentoEscolar {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int codigo;
 	
-	@OneToMany(mappedBy = "trabalho_codigo")
+	@ManyToOne
+	@JoinColumn(name = "aluno_codigo")
 	private Aluno aluno;
 	
-	@ManyToMany
+	@ManyToOne
 	@JoinColumn(name = "turma_codigo")
 	private Turma turma;
 	
+	@OneToMany
+	private List<TrabalhoNota> trabalhoNota;
+	
+	
 	private Double prova1;
 	private Double prova2;
-	
-	@ManyToMany
-	@JoinColumn(name = "trabalho_codigo")
-	private List<TrabalhoNota> trabalhosNotas;
 	
 	private Double mediaTrabalhos;
 	private Double mediaGeral;

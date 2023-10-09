@@ -1,13 +1,12 @@
 package br.com.wilian.ProjetoApiContAcad.models;
 
 import java.util.Date;
+import java.util.List;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,13 +18,13 @@ public class Professor extends BasePessoa{
 
 	private String cargo;
 
-	@OneToOne(cascade = CascadeType.ALL)
+	@ManyToOne
     @JoinColumn(name = "disciplina_codigo")
 	private Disciplina disciplina;
 	
-//	@OneToMany(mappedBy = "turma_codigo")
-//	private Turma turma;
-
+	@OneToMany(mappedBy = "professor")
+	private List<Turma> turma;
+	
 	
 	//constructor
 	public Professor(int codigo, String nome, Date dataNascimento, String nomeUsuario, String senha, String cargo,
