@@ -1,4 +1,4 @@
-package br.com.wilian.ProjetoApiContAcad.models;
+package br.com.wilian.ProjetoApiContAcad.entities;
 
 import java.util.List;
 
@@ -11,35 +11,28 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class RendimentoEscolar {
-
+public class Trabalho {
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int codigo;
+	private Long codigo;
 	
 	@ManyToOne
-	@JoinColumn(name = "aluno_codigo")
-	private Aluno aluno;
+	@JoinColumn(name = "disciplina_codigo")
+	private Disciplina disciplina;
 	
-	@ManyToOne
-	@JoinColumn(name = "turma_codigo")
-	private Turma turma;
-	
-	@OneToMany
+	@OneToMany(mappedBy = "trabalho")
 	private List<TrabalhoNota> trabalhoNota;
 	
-	
-	private Double prova1;
-	private Double prova2;
-	
-	private Double mediaTrabalhos;
-	private Double mediaGeral;
+	private String descricao;
 	
 	
 }

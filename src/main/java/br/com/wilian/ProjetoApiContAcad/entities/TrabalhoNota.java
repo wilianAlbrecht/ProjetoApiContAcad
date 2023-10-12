@@ -1,6 +1,4 @@
-package br.com.wilian.ProjetoApiContAcad.models;
-
-import java.util.List;
+package br.com.wilian.ProjetoApiContAcad.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,26 +9,31 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class Trabalho {
+public class TrabalhoNota {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int codigo;
+	private Long codigo;
+	
+	private Double notaAluno;
 	
 	@ManyToOne
-	@JoinColumn(name = "disciplina_codigo")
-	private Disciplina disciplina;
+	@JoinColumn(name = "aluno_codigo")
+	private Aluno aluno;
 	
-	@OneToMany(mappedBy = "trabalho")
-	private List<TrabalhoNota> trabalhoNota;
+	@ManyToOne
+	@JoinColumn(name = "trabalho_codigo")
+	private Trabalho trabalho;
 	
-	private String descricao;
-	
+	@ManyToOne
+	private RendimentoEscolar rendimentoEscolar;
 	
 }

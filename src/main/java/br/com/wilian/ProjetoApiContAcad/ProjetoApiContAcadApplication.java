@@ -3,7 +3,7 @@ package br.com.wilian.ProjetoApiContAcad;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.com.wilian.ProjetoApiContAcad.models.TrabalhoNota;
+import br.com.wilian.ProjetoApiContAcad.entities.TrabalhoNota;
 
 @SpringBootApplication
 public class ProjetoApiContAcadApplication {
