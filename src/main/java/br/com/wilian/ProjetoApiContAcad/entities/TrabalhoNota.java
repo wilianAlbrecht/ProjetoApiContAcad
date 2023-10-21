@@ -1,5 +1,7 @@
 package br.com.wilian.ProjetoApiContAcad.entities;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,6 +37,11 @@ public class TrabalhoNota {
 	private Trabalho trabalho;
 	
 	@ManyToOne
+	@JoinColumn(name = "")
 	private RendimentoEscolar rendimentoEscolar;
+	
+	@OneToOne(mappedBy = "trabalhoNota")
+	private TrabalhosNotaPorRendimento trabalhosNotaPorRendimento;
+	
 	
 }

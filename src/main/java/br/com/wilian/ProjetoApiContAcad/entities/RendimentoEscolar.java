@@ -31,8 +31,8 @@ public class RendimentoEscolar {
 	@JoinColumn(name = "turma_codigo")
 	private Turma turma;
 	
-	@OneToMany
-	private List<TrabalhoNota> trabalhoNota;
+	@OneToMany(mappedBy = "rendimentoEscolar")
+	private List<TrabalhosNotaPorRendimento> trabalhosNostaPorRendimento;
 	
 	
 	private Double prova1;
