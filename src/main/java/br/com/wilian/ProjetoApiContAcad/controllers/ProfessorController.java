@@ -12,28 +12,11 @@ import br.com.wilian.ProjetoApiContAcad.entities.Trabalho;
 import br.com.wilian.ProjetoApiContAcad.entities.TrabalhoNota;
 import br.com.wilian.ProjetoApiContAcad.entitiesDTO.ProfessorDTO;
 import br.com.wilian.ProjetoApiContAcad.entitiesDTO.TrabalhoNotaDTO;
-import br.com.wilian.ProjetoApiContAcad.repositorys.ProfessorRepository;
 import br.com.wilian.ProjetoApiContAcad.services.ProfessorService;
 
 @RestController
 @RequestMapping("/professor")
 public class ProfessorController {
-//	extends HttpServlet
-
-//	private static final long serialVersionUID = -5010345118170061842L;
-//
-//	//
-//	protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-//		// Acesse a sessão
-//		HttpSession session = request.getSession();
-//
-//		// Realize operações na sessão
-//		String attributeValue = (String) session.getAttribute("myAttribute");
-//		if (attributeValue == null) {
-//			session.setAttribute("myAttribute", "Hello, World!");
-//		}
-//
-//	}
 
 	final ProfessorService professorService;
 
@@ -42,7 +25,7 @@ public class ProfessorController {
 	}
 
 	/**
-	 * end point responsavel por autenticar o professor
+	 * end point responsavel lancar novo trabalho
 	 * 
 	 * @param ProfessorDTO dto
 	 * @return ResponseEntity

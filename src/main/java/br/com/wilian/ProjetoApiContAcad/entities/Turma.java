@@ -2,6 +2,8 @@ package br.com.wilian.ProjetoApiContAcad.entities;
 
 import java.util.List;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,7 +24,9 @@ import lombok.Setter;
 public class Turma {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+//	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GenericGenerator(name="id", type = org.hibernate.id.IncrementGenerator.class)
+	@GeneratedValue(generator="id")
 	private int codigo;
 	
 	@ManyToOne

@@ -8,4 +8,6 @@ public interface AlunoRepository extends JpaRepository<Aluno, Long>{
 	
 	Aluno findByNome(String nomeAuno);
 	
+	Aluno findByNomeUsuarioAndSenha(String nomeUsuario, String senha);
+	
 }
