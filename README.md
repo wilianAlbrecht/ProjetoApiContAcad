@@ -5,7 +5,7 @@ Essa API simula um sistema escolar, que na qual pode ser acessado pelo o profess
 <br>
 Em todas as ações ma API é necessario autenticar o usuario, assando pelo Json o nome de usuario e a senha.<br>
 <br>
-{<br>
+{</br>
 	"nomeUsuario" : "wilian",<br>
 	"senha" : "123"<br>
 }<br>
