@@ -1,5 +1,5 @@
 # ProjetoApiContAcad
-Projeto API para um sistema escolar.
+Projeto API para um sistema escolar.<br>
 
 Essa API simula um sistema escolar, que na qual pode ser acessado pelo o professor e pelo aluno. O professor pode lançar trabalho e notas dos trabalhos já existentes, os alunos podem pesquisar por suas notas ou ver o histório escolar.
 
