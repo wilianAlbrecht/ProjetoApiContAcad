@@ -51,7 +51,7 @@ PUT: professor/lancar-nota-trabalho<br>
 	"nomeUsuario" : "rodrigo",<br>
 	"senha" : "123",<br>
 	"nomeAluno" : "wilian",<br>
-	"descricao" : "Trabalho sobre biomas",<br>
+	"descricaoTrabalho" : "Trabalho sobre biomas",<br>
 	"notaAluno" : "6.6"<br>
 }<br>
 
